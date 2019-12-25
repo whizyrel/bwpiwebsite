@@ -1,7 +1,7 @@
 :root {
   --navbar-background-color: #ffffff;
   --navbar-height: 60px;
-  --navabar-box-shadow: #a7a6a6d8;
+  --navabar-box-shadow: #978585d8;
 }
 
 * {
@@ -28,6 +28,7 @@ body {
 
 .__contact-btn {
   color: #000000;
+  margin-right: 2rem;
 }
 
 .__contact-btn:hover {
@@ -38,6 +39,16 @@ body {
 
 .__bold-text {
   font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .__contact-btn {
+    margin-right: 1rem;
+  }
+  .__brand-logo {
+    height: 40px;
+    width: 140px;
+  }
 }
 
 .overlay {
