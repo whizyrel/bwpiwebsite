@@ -73,6 +73,12 @@ body {
 	line-height: 2rem;
 }
 
+.__text-overlay span:nth-child(3) {
+	font-size: 12px;
+	max-width: 350px;
+	/* height: 30px; */
+}
+
 .__bold-text {
   font-weight: 600;
 }
@@ -102,6 +108,11 @@ body {
 	.__text-overlay span:nth-child(2) {
 		font-size: 17px;
 		line-height: 1rem
+	}
+	.__text-overlay span:nth-child(3) {
+		font-size: 12px;
+		max-width: 300px;
+		/* height: 30px; */
 	}
 }
 
