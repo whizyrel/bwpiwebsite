@@ -41,7 +41,7 @@ body {
 
 .__container {
 	height: 400px;
-	background-image: url('https://bit.ly/2ZqXDuv');
+	background-image: url('https://bit.ly/2Qo3Gf0');
 	background-size: cover;
 }
 
@@ -63,9 +63,14 @@ body {
 	flex-direction: column;
 }
 
+.__text-overlay span:nth-child(1) {
+	line-height: 3rem;
+}
+
 .__text-overlay span:nth-child(2) {
 	font-family: 'Varela';
 	font-size: 25px;
+	line-height: 2rem;
 }
 
 .__bold-text {
@@ -90,8 +95,13 @@ body {
 		font-size: 30px;
 	}
 
+	.__text-overlay span:nth-child(1) {
+		line-height: 2rem;
+	}
+
 	.__text-overlay span:nth-child(2) {
-		font-size: 13px;
+		font-size: 17px;
+		line-height: 1rem
 	}
 }
 
