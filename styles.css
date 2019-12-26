@@ -80,7 +80,7 @@ a:hover {
 	background-color: #ffffff;
   box-shadow: 0 0 7px 0 var(--navabar-box-shadow);
 	width: 80%;
-  z-index: 5000;
+  z-index: 1000;
 	position: absolute;
 	top: 370px;
 	left: 10%;
@@ -89,6 +89,28 @@ a:hover {
 
 .__navbar-sub span a:hover {
   color: #711d2b;
+}
+
+.__section-room-container {
+	min-height: 340px;
+}
+
+.__room-vector-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.__section-room-text {
+	flex-direction: column;
+	font-size: 15px;
+}
+
+.__section-room-text span:nth-child(1) {
+	font-family: 'Varela';
+	font-size: 35px;
+	flex-wrap: wrap;
+	text-align: center;
 }
 
 .__bold-text {
@@ -125,6 +147,24 @@ a:hover {
 		font-size: 12px;
 		max-width: 300px;
 		/* height: 30px; */
+	}
+
+	.__navbar-sub {
+		font-size: 11px;
+		overflow-x: auto
+	}
+
+	.__section-room-container {
+		flex-wrap: wrap;
+	}
+
+	.__room-vector-image {
+		margin: 3.5rem auto 2rem auto!important;
+	}
+
+	.__section-room-text p {
+		font-size: 11px;
+		margin: .6rem 2rem auto!important;
 	}
 }
 
