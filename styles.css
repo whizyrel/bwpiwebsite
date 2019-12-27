@@ -95,10 +95,6 @@ a:hover {
 	min-height: 340px;
 }
 
-.__section-room-types {
-	flex-wrap: wrap;
-}
-
 .__room-vector-image {
 	width: 200px;
 	height: 200px;
@@ -140,8 +136,8 @@ a:hover {
 	position: relative;
 	width: 350px;
 	height: 180px;
-	top: -16px;
-	box-shadow: 0 0 4px 0 #d6d3d3;
+	top: -30px;
+	box-shadow: 0 0 4px 0 #8e8c8c;
 	border-bottom-right-radius: 20px;
 	z-index: 1000;
 }
@@ -154,9 +150,22 @@ a:hover {
 	flex-direction: column;
 }
 
+.__room-description span:nth-child(1) {
+	font-size: 28px;
+	font-family: 'Varela';
+}
+
 .__card-text-container span:nth-child(2) {
 	font-family: 'Varela';
 	font-size: 12px;
+}
+
+.__section-room-types {
+	flex-direction: column;
+}
+
+sup {
+	top: .2rem;
 }
 
 .__bold-text {
@@ -212,15 +221,24 @@ a:hover {
 		font-size: 11px;
 		margin: .6rem 2rem auto!important;
 	}
+
+	.__section-room-type {
+		flex-wrap: wrap;
+	}
+
+	.__room-card,
+	.__room-description {
+		margin: auto!important;
+	}
 }
 
 @media (min-width: 992px) {
 	.__room-vector-image {
-		margin-left: 10rem!important;
+		margin-left: 18%!important;
 	}
 
 	.__section-room-text {
-		margin-right: 10rem;
+		margin-right: 18%;
 	}
 
 	.__section-room-text p {
