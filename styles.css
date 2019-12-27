@@ -233,12 +233,18 @@ sup {
 }
 
 @media (min-width: 992px) {
-	.__room-vector-image {
+	.__room-vector-image,
+	.__section-room-types {
 		margin-left: 18%!important;
 	}
 
-	.__section-room-text {
+	.__section-room-text,
+	.__section-room-types {
 		margin-right: 18%;
+	}
+
+	.__room-card {
+		margin-left: 0!important;
 	}
 
 	.__section-room-text p {
