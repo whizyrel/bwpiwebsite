@@ -168,6 +168,16 @@ a:hover {
 	}
 }
 
+@media (min-width: 992px) {
+	.__room-vector-image {
+		margin-left: 10rem!important;
+	}
+
+	.__section-room-text {
+		margin-right: 10rem;
+	}
+}
+
 .overlay {
 	position: absolute;
 	z-index: 2000;
