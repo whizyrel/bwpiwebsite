@@ -22,6 +22,8 @@
 
   <!-- main style -->
   <link rel="stylesheet" href="./styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <body>
@@ -37,8 +39,8 @@
   
   <div class="d-flex __container w-100">
     <div class="d-flex w-100 __text-overlay my-auto mx-auto">
-      <span class="mx-auto __bold-text">Best Western Plus</span>
-      <span class="mx-auto mt-1"> Ibadan </span>
+      <span class="mx-auto __bold-text" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="0">Best Western Plus</span>
+      <span class="mx-auto mt-1" data-aos="fade-up" data-aos-delay="10"> Ibadan </span>
 
       <span class="mx-auto mt-2 __bold-text">
         Best Western Plus Ibadan is a 50 world-class luxury bedroom hotel that feature the latest technology and amenities. Cruise through our world and get in touch with us where need be.
@@ -51,24 +53,24 @@
       </span>
 
       <span class="mr-2 d-flex h-100 __bold-text">
-        <a href="#rooms" class="my-auto m-0 p-0"> Services </a>
+        <a href="#services" class="my-auto m-0 p-0"> Services </a>
       </span>
 
       <span class="mr-2 d-flex h-100 __bold-text">
-        <a href="#rooms" class="my-auto m-0 p-0"> Dining </a>
+        <a href="#dinning" class="my-auto m-0 p-0"> Dining </a>
       </span>
 
       <span class="mr-2 d-flex h-100 __bold-text">
-        <a href="#rooms" class="my-auto m-0 p-0"> Conferencing </a>
+        <a href="#conferencing" class="my-auto m-0 p-0"> Conferencing </a>
       </span>
 
       <span class="d-flex mr-auto h-100 __bold-text">
-        <a href="#rooms" class="my-auto m-0 p-0"> Banquetting </a>
+        <a href="#banquetting" class="my-auto m-0 p-0"> Banquetting </a>
       </span>
     </div>
   </div>
 
-  <div class="d-flex w-100 mb-3 __section-room-container">
+  <div class="d-flex w-100 mb-3 __section-room-container" data-aos="fade-down">
     <img class="__room-vector-image ml-5 my-auto" src="./imgs/1.jpg" alt="room_vector">
 
     <div class="d-flex w-100 __section-room-text">
@@ -79,7 +81,7 @@
     </div>
   </div>
 
-  <div class="d-flex __section-room-types-container" id="rooms">
+  <div class="d-flex __section-room-types-container" id="rooms" data-aos="fade-up" data-aos-delay="30">
     <div class="d-flex w-100 mb-3 __section-room-type">
       <img src="./room_pics/r1.png" alt="room_image" class="__card-img w-100">
 
@@ -91,15 +93,15 @@
               Standard rooms equipped with a work desk, fridge, minisafe, a 40 inch High Definition television and High Speed internet ethernet port or wi-fi.
             </span>
             <span class="d-flex mt-2 mx-3 mb-2">
-              Room - 28.6m2
-              Bathroom - 6.32m2
+              Room - 28.6m<sup class="mr-2">2</sup>
+              Bathroom - 6.32m<sup>2</sup>
             </span>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="d-flex w-100 mb-3 __section-room-type">
+    <div class="d-flex w-100 mb-3 __section-room-type" data-aos="fade-up">
       <img src="./room_pics/r2.png" alt="room_image" class="__card-img w-100">
 
       <div class="d-flex w-100 __room-description-container">
@@ -110,13 +112,49 @@
               Standard rooms equipped with a work desk, fridge, minisafe, a 40 inch High Definition television and High Speed internet ethernet port or wi-fi.
             </span>
             <span class="d-flex mt-2 mx-3 mb-2">
-              Room - 28.6m2
-              Bathroom - 6.32m2
+              Room - 28.6m<sup class="mr-2">2</sup>
+              Bathroom - 6.32m<sup>2</sup>
             </span>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="d-flex w-100 __section-dinning-container mb-3" data-aos="fade-up" id="dinning">
+    <img src="./imgs/dinningheader1.png" alt="dinning image" class="w-100 __section-dinning-image">
+    <div class="w-100 d-flex __section-dinning-overlay-container">
+      <span class="__bold-text __section-dinning-text mt-3  mb-auto ml-5">Dinning</span>
+    </div>
+  </div>
+
+  <div class="d-flex w-100 my-5 __section-restaurant-container mb-3">
+    <div class="col-sm-8" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="10">
+      <img src="./imgs/restaurant.JPG" alt="image" class="w-100 h-100 my-auto __section-restaurant-image">
+    </div>
+    <div class="col-sm-4 w-100 d-flex" data-aos="fade-right">
+      <span class="__bold-text my-auto __restaurant-header">Lara's Restaurant</span>
+    </div>
+  </div>
+
+  <div class="d-flex w-100 __section-conferences mb-3">
+    <span class="d-flex ml-5 __section-conference-header __bold-text __grey-text ">
+      Our Conferences
+    </span>
+
+    <div class="d-flex row w-100 mx-auto __section-conference-images-container" data-aos-delay="30">
+      <div class="col-md-6 my-3 px-2">
+        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate1.jpg" alt="conference image" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="50">
+      </div>
+      <div class="col-md-6 my-3 px-2">
+        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate2.jpg" alt="conference image" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="50">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex w-100 __section-club-container mb-3" data-aos="fade-right" data-aos-easing="ease-out" data-aos-delay="30">
+    <span class="__bold-text mb-3 ml-5 __section-club-header" data-aos="fade-in" data-aos-easing="linear">Club</span>
+    <img class="__section-club-image w-100" src="./imgs/club.jpg" alt="club image">
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -128,5 +166,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
 </body>
 </html>

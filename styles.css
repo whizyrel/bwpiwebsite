@@ -1,3 +1,6 @@
+/* @import "@material/textfield/mdc-text-field"; */
+/* @import "./node_modules/@material/textfield/dist/"; */
+
 :root {
 	--navbar-background-color: #ffffff;
 	--navbar-height: 60px;
@@ -171,7 +174,8 @@ a:hover {
 	height: 400px;
 }
 
-.__room-description-container {
+.__room-description-container,
+.__section-dinning-overlay-container {
 	position: absolute;
 	height: 400px;
 }
@@ -193,12 +197,66 @@ a:hover {
 	font-size: 14px;
 }
 
+.__section-dinning-container,
+.__section-restaurant-container,
+.__section-club-container {
+	height: 300px;
+}
+
+.__section-dinning-image,
+.__section-restaurant-image,
+.__section-conference-images,
+.__section-club-image {
+	height: inherit;
+	object-position: center;
+	object-fit: cover;
+}
+
+.__section-dinning-text {
+	flex-direction: column;
+	color: #ffffff;
+	font-size: 5rem;
+}
+
+.__restaurant-header {
+	font-size: 35px;
+	color: grey;
+}
+
+.__section-conferences {
+	min-height: 400px;
+	flex-direction: column;
+}
+
+.__section-conference-header {
+	font-size: 25px;
+	z-index: 1000;
+	/* position: absolute; */
+}
+
+.__section-conference-images-container,
+.__section-club-container {
+	min-height: 400px;
+}
+
+.__section-club-container {
+	flex-direction: column;
+}
+
+.__section-club-header {
+	font-size: 35px;
+}
+
 sup {
 	top: .2rem;
 }
 
 .__bold-text {
 	font-weight: 600;
+}
+
+.__grey-text {
+	color: #c0bfbf;
 }
 
 @media screen and (max-width: 768px) {
@@ -231,6 +289,8 @@ sup {
 	.__text-overlay span:nth-child(3) {
 		font-size: 12px;
 		max-width: 380px;
+		margin-left: 1rem!important;
+		margin-right: 1rem!important;
 	}
 
 	.__navbar-sub {
@@ -263,6 +323,29 @@ sup {
 
 	.__room-description-container {
 		height: 300px;
+	}
+
+	.__section-dinning-text {
+		flex-direction: column;
+		color: #ffffff;
+		font-size: 3rem;
+	}
+
+	.__restaurant-header {
+		font-size: 20px;
+		color: grey;
+	}
+
+	.__section-conference-header {
+		font-size: 18px;
+	}
+
+	.__section-conference-images-container {
+		width: auto!important;
+	}
+
+	.__section-club-header {
+		font-size: 22px;
 	}
 }
 
