@@ -262,6 +262,11 @@ sup {
 	color: #484848;
 }
 
+.__section-contact-form {
+	flex-direction: column;
+	max-width: 650px;
+}
+
 @media screen and (max-width: 768px) {
 	.__contact-btn {
 		margin-right: 1rem;
@@ -350,6 +355,11 @@ sup {
 	.__section-club-header {
 		font-size: 22px;
 	}
+
+	.__section-contact-form {
+		flex-direction: column;
+		max-width: 350px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -370,5 +380,9 @@ sup {
 	.__section-room-text p {
 		font-size: 15px;
 		margin: .6rem 10rem auto!important;
+	}
+
+	.__section-contact-form {
+		max-width: 650px;
 	}
 }
