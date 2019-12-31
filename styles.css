@@ -275,6 +275,10 @@ sup {
 	font-size: 35px;
 }
 
+.__section-contact-form-button {
+	color: #ffffff!important;
+}
+
 @media screen and (max-width: 768px) {
 	.__contact-btn {
 		margin-right: 1rem;
