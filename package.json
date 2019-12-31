@@ -1,0 +1,22 @@
+{
+  "name": "bwpiwebsite",
+  "version": "1.0.0",
+  "description": "## Description * This Project is a simple interactive Website for Best Western Plus Ibadan * I used bootstrap 4 and fontawesome so far.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awhatefekaro/bwpiwebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awhatefekaro/bwpiwebsite/issues"
+  },
+  "homepage": "https://github.com/awhatefekaro/bwpiwebsite#readme",
+  "dependencies": {
+    "@material/textfield": "^4.0.0"
+  }
+}

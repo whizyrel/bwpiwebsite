@@ -24,6 +24,11 @@
   <link rel="stylesheet" href="./styles.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body>
@@ -128,16 +133,7 @@
     </div>
   </div>
 
-  <div class="d-flex w-100 my-5 __section-restaurant-container mb-3">
-    <div class="col-sm-8" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="10">
-      <img src="./imgs/restaurant.JPG" alt="image" class="w-100 h-100 my-auto __section-restaurant-image">
-    </div>
-    <div class="col-sm-4 w-100 d-flex" data-aos="fade-right">
-      <span class="__bold-text my-auto __restaurant-header">Lara's Restaurant</span>
-    </div>
-  </div>
-
-  <div class="d-flex w-100 __section-conferences mb-3">
+  <div class="d-flex w-100 __section-conferences mb-3" id="conferencing">
     <span class="d-flex ml-5 __section-conference-header __bold-text __grey-text ">
       Our Conferences
     </span>
@@ -152,8 +148,24 @@
     </div>
   </div>
 
+  <div class="d-flex w-100 __section-club-container mb-3" data-aos="fade-right" data-aos-easing="ease-out"
+    data-aos-delay="30">
+    <span class="__bold-text mb-3 ml-5 __section-club-header" data-aos="fade-zoom-in" data-aos-easing="linear">Adelabs
+      Hall</span>
+    <img class="__section-club-image w-100" src="./imgs/adelabsHall1.jpg" alt="club image">
+  </div>
+
+  <div class="d-flex w-100 my-5 __section-restaurant-container mb-3">
+    <div class="col-sm-8" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="10">
+      <img src="./imgs/restaurant.JPG" alt="image" class="w-100 h-100 my-auto __section-restaurant-image">
+    </div>
+    <div class="col-sm-4 w-100 d-flex" data-aos="fade-right">
+      <span class="__bold-text my-auto __restaurant-header">Lara's Restaurant</span>
+    </div>
+  </div>
+
   <div class="d-flex w-100 __section-club-container mb-3" data-aos="fade-right" data-aos-easing="ease-out" data-aos-delay="30">
-    <span class="__bold-text mb-3 ml-5 __section-club-header" data-aos="fade-in" data-aos-easing="linear">Club</span>
+    <span class="__bold-text mb-3 ml-5 __section-club-header" data-aos="fade-zoom-in" data-aos-easing="linear">Club</span>
     <img class="__section-club-image w-100" src="./imgs/club.jpg" alt="club image">
   </div>
 

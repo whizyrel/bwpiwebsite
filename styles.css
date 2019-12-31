@@ -198,8 +198,7 @@ a:hover {
 }
 
 .__section-dinning-container,
-.__section-restaurant-container,
-.__section-club-container {
+.__section-restaurant-container {
 	height: 300px;
 }
 
@@ -234,13 +233,17 @@ a:hover {
 	/* position: absolute; */
 }
 
-.__section-conference-images-container,
-.__section-club-container {
+.__section-conference-images-container {
 	min-height: 400px;
 }
 
 .__section-club-container {
 	flex-direction: column;
+	height: 400px;
+}
+
+.__section-club-image {
+	min-height: 320px;
 }
 
 .__section-club-header {
@@ -256,7 +259,7 @@ sup {
 }
 
 .__grey-text {
-	color: #c0bfbf;
+	color: #484848;
 }
 
 @media screen and (max-width: 768px) {
