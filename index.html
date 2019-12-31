@@ -44,7 +44,7 @@
   <div class="d-flex __container w-100">
     <div class="d-flex w-100 __text-overlay my-auto mx-auto">
       <span class="mx-auto __bold-text" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="0">Best Western Plus</span>
-      <span class="mx-auto mt-1" data-aos="fade-up" data-aos-delay="10"> Ibadan </span>
+      <span class="mx-auto mt-1" data-aos="fade-up" data-aos-delay="3"> Ibadan </span>
 
       <span class="mx-auto mt-2 __bold-text">
         Best Western Plus Ibadan is a 50 world-class luxury bedroom hotel that feature the latest technology and amenities. Cruise through our world and get in touch with us where need be.
@@ -85,7 +85,7 @@
     </div>
   </div>
 
-  <div class="d-flex __section-room-types-container" id="rooms" data-aos="fade-up" data-aos-delay="30">
+  <div class="d-flex __section-room-types-container" id="rooms" data-aos="fade-up" data-aos-delay="10">
     <div class="d-flex w-100 mb-3 __section-room-type">
       <img src="./room_pics/r1.png" alt="room_image" class="__card-img w-100">
 
@@ -137,12 +137,12 @@
       Our Conferences
     </span>
 
-    <div class="d-flex row w-100 mx-auto __section-conference-images-container" data-aos-delay="30">
+    <div class="d-flex row w-100 mx-auto __section-conference-images-container" data-aos-delay="10">
       <div class="col-md-6 my-3 px-2">
-        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate1.jpg" alt="conference image" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="50">
+        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate1.jpg" alt="conference image" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="10">
       </div>
       <div class="col-md-6 my-3 px-2">
-        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate2.jpg" alt="conference image" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="50">
+        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate2.jpg" alt="conference image" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="10">
       </div>
     </div>
   </div>
@@ -197,9 +197,10 @@
   </div>
 
   <!-- contact form -->
-  <div class="d-flex mx-auto __section-contact-form" id="contact-us">
-    <form>
-      <div class="row">
+  <div class="d-flex mx-auto __section-contact-form-container" id="contact-us">
+    <span class="mx-auto __bold-text mb-2 __section-contact-form-header">Leave a message</span>
+    <form class="w-100 d-flex __section-contact-form">
+      <div class="row mx-0">
         <div class="input-field col-sm-6 px-0">
           <input id="icon_prefix" type="text" class="validate" required>
           <label for="icon_prefix">Name</label>
@@ -210,19 +211,21 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mx-0">
         <div class="input-field col-sm-12 px-0">
           <input id="icon_prefix" type="text" class="validate" required>
           <label for="icon_prefix">Subject</label>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mx-0">
         <div class="input-field col-sm-12 px-0">
           <textarea id="textarea1" class="materialize-textarea" required></textarea>
           <label for="textarea1">Message</label>
         </div>
       </div>
+
+      <a class="waves-effect waves-light btn mb-4 ml-auto mr-3 red accent-4">Submit</a>
     </form>
   </div>
 

@@ -262,9 +262,17 @@ sup {
 	color: #484848;
 }
 
-.__section-contact-form {
+.__section-contact-form-container {
 	flex-direction: column;
 	max-width: 650px;
+}
+
+.__section-contact-form {
+	flex-direction: column;
+}
+
+.__section-contact-form-header {
+	font-size: 35px;
 }
 
 @media screen and (max-width: 768px) {
@@ -356,9 +364,12 @@ sup {
 		font-size: 22px;
 	}
 
-	.__section-contact-form {
-		flex-direction: column;
+	.__section-contact-form-container {
 		max-width: 350px;
+	}
+
+	.__section-contact-form-header {
+		font-size: 22px;
 	}
 }
 
@@ -382,7 +393,7 @@ sup {
 		margin: .6rem 10rem auto!important;
 	}
 
-	.__section-contact-form {
+	.__section-contact-form-container {
 		max-width: 650px;
 	}
 }
