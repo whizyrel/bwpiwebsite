@@ -299,6 +299,16 @@ sup {
 	object-position: center;
 }
 
+.__action__btn {
+	position: absolute!important;
+	right: 10px;
+	top: -20px;
+}
+
+.__action__btn i {
+	line-height: normal!important;
+}
+
 footer {
 	font-family: 'Raleway';
 }
