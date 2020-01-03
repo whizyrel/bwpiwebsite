@@ -285,12 +285,51 @@ sup {
 	color: #ffffff!important;
 }
 
+.__section--amenities__container {
+	min-height: 400px;
+	max-height: fit-content;
+}
+
+.card-image {
+	height: 80%;
+}
+
+.card-image img {
+	object-fit: cover;
+	object-position: center;
+}
+
 footer {
 	font-family: 'Raleway';
 }
 
 .footer-copyright {
 	font-family: 'Costa Ptf Demi';
+}
+
+@media (max-width: 320px) {
+	.__navbar-sub > span {
+		margin-left: .5rem!important;
+	}
+
+	.__navbar-sub span:nth-last-child(1) > a {
+		margin-right: .5rem!important;
+	}
+
+	.__description-text {
+		margin-right: auto;
+    width: 250px;
+		height: 200px;
+	}
+
+	.__section-contact-form-container {
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+
+	#email, #email + label {
+		margin-left: 0!important;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -325,6 +364,8 @@ footer {
 		max-width: 380px;
 		margin-left: 1rem!important;
 		margin-right: 1rem!important;
+		padding-left: .5rem;
+		padding-right: .5rem;
 	}
 
 	.__navbar-sub {
@@ -389,6 +430,14 @@ footer {
 	.__section-contact-form-header {
 		font-size: 22px;
 	}
+
+	.__section--amenities__container .card {
+		min-height: fit-content;
+	}
+
+	.footer-copyright {
+		font-size: 13px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -429,5 +478,13 @@ footer {
 	.__section-room-text p {
 		margin-left: 2rem!important;
 		margin-right: auto!important;
+	}
+}
+
+/* iphone 6-8 */
+@media (max-width: 375px) {
+	.__section-room-text p {
+		margin-left: 2rem!important;
+		margin-right: 2rem!important;
 	}
 }
