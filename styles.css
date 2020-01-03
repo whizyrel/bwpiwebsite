@@ -50,6 +50,10 @@ a:hover {
 	background-color: #d4d4d44f;
 }
 
+.__contact-btn span {
+	align-items: center;
+}
+
 .__container {
 	height: 400px;
 	background-image: url('https://bit.ly/2Qo3Gf0');
