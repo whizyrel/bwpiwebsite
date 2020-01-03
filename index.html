@@ -43,7 +43,7 @@
      </a>
   </nav>
   
-  <div class="d-flex __container w-100">
+  <div class="d-flex __container w-100" id="top">
     <div class="d-flex w-100 __text-overlay my-auto mx-auto">
       <span class="mx-auto __bold-text" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="3">Best Western Plus</span>
       <span class="mx-auto mt-1" data-aos="fade-up" data-aos-delay="3"> Ibadan </span>
@@ -130,7 +130,7 @@
       <img src="./room_pics/r3.png" alt="room_image" class="__card-img w-100">
 
       <div class="d-flex w-100 __room-description-container">
-        <div class="d-flex ml-auto mr-4 mt-2 mb-auto my-auto __bold-text __description-text">
+        <div class="d-flex ml-4 mr-auto mt-2 mb-auto my-auto __bold-text __description-text">
           <div class="d-flex my-auto __text-container">
             <span class="mx-3 __bold-text mt-4">Deluxe Suite</span>
             <span class="mx-3 mt-2">
@@ -168,7 +168,7 @@
       <img src="./room_pics/r5.png" alt="room_image" class="__card-img w-100">
 
       <div class="d-flex w-100 __room-description-container">
-        <div class="d-flex ml-auto mr-4 mt-2 mb-auto my-auto __bold-text __description-text">
+        <div class="d-flex ml-4 mr-auto mt-2 mb-auto my-auto __bold-text __description-text">
           <div class="d-flex my-auto __text-container">
             <span class="mx-3 __bold-text mt-4">Presidential Suite</span>
             <span class="mx-3 mt-2">
@@ -191,10 +191,10 @@
 
     <div class="d-flex row w-100 mx-auto __section-conference-images-container">
       <div class="col-md-6 my-3 px-2">
-        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate1.jpg" alt="conference image" data-aos="fade-up" data-aos-delay="3">
+        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate1.jpg" alt="conference image" data-aos="fade-up">
       </div>
       <div class="col-md-6 my-3 px-2">
-        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate2.jpg" alt="conference image" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="3">
+        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate2.jpg" alt="conference image" data-aos="fade-down">
       </div>
     </div>
   </div>
@@ -214,8 +214,8 @@
   </div>
 
   <div class="d-flex w-100 my-5 __section-restaurant-container mb-3" data-aos="fade-zoom-in">
-    <div class="col-sm-8 d-flex" data-aos="fade-up">
-      <img src="./imgs/restaurant.JPG" alt="image" class="w-100 h-100 my-auto __section-restaurant-image">
+    <div class="col-sm-8 d-flex">
+      <img src="./imgs/restaurant.JPG" alt="image" class="w-100 h-100 my-auto __section-restaurant-image" data-aos="fade-zoom-in">
     </div>
     <div class="col-sm-4 w-100 d-flex" data-aos="fade-right">
       <span class="__bold-text my-auto __restaurant-header">Lara's Restaurant</span>
@@ -315,7 +315,7 @@
   </div>
 
   <!-- contact form -->
-  <div class="d-flex mx-auto __section-contact-form-container mt-4" id="contact-us" data-aos="fade-zoom-in">
+  <div class="d-flex mx-auto __section-contact-form-container mt-4" id="contact-us" data-aos="fade-down" data-aos-delay="5">
     <span class="mx-auto __bold-text mb-2 __section-contact-form-header">Leave a message</span>
     <form class="w-100 d-flex __section-contact-form">
       <div class="row mx-0">
@@ -347,7 +347,13 @@
     </form>
   </div>
 
-  <footer class="page-footer" data-aos="fade-zoom-in">
+  <footer class="page-footer mt-4" data-aos="fade-down">
+     <button class="d-flex btn-floating btn-large waves-effect waves-light __action__btn p-3 red accent-4" data-aos="fade-right">
+      <a href="#top" class="d-flex m-0 p-0 w-100 m-auto">
+        <i class="fa fa-angle-double-up fa-1x"></i>
+      </a>
+    </button>
+
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -384,6 +390,7 @@
         </div>
       </div>
     </div>
+
     <div class="footer-copyright">
       <div class="container">
         ©2020 Copyright
