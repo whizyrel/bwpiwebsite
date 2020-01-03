@@ -1,142 +1,490 @@
+:root {
+	--navbar-background-color: #ffffff;
+	--navbar-height: 60px;
+	--navabar-box-shadow: #978585d8;
+}
+
+@font-face {
+	src: url('./assets/fonts/costa-ptf-demi/costa-ptf-demi.otf');
+	font-family: 'Costa Ptf Demi'
+}
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; 
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
 body {
-  
+	font-family: 'Costa Ptf Demi', 'Raleway', sans-serif !important;
 }
 
-.overlay {
-  position: absolute;
-  z-index: 2000;
-  margin: auto;
-  color: rgb(256, 128, 256);
-  width: 70%;
-  border: 2px solid red;
+a {
+	color: #000000;
 }
 
-
-
-.overlay p {
-  text-align: center;
-  left: 0;
-  right: 0;
-  padding-left: 130px;
-  padding-top: 180px;
-  padding-bottom: 80px;
+a:hover {
+	text-decoration: none !important;
 }
 
-/* .overlay::after {
-  contain: '';
-  position: absolute;
-  left: 0; top: 0;
-  z-index: 1;
-
-} */
-
-.section-room {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  text-align: left;
+.__navbar {
+	background-color: var(--navbar-background-color);
+	height: var(--navbar-height);
+	z-index: 5000;
+	box-shadow: 0 0 3px 0 var(--navabar-box-shadow);
+	position: fixed;
+	top: 0;
 }
 
-.room_item {
-  padding: 20px;
-  text-align: justify;
-  height: 70vh;
-  position: relative;
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  margin-bottom: 30px;
-  overflow: hidden;
+.__brand-logo {
+	height: 40px;
+	width: 200px;
 }
 
-.room_item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(255,255,255,.3);
-  opacity: 0;
-  width: calc(100% - 470px);
+.__contact-btn {
+	color: #000000;
+	margin-right: 2rem;
 }
 
-.room_item .text{
-  max-width: 470px;
-  padding: 20px 30px 30px 30px;
-  position: relative;
-  z-index: 5;
-  height: 100%;
+.__contact-btn:hover {
+	color: #711d2b;
+	text-decoration: none;
+	background-color: #d4d4d44f;
 }
 
-.room_item:nth-child(1) {
-  background-image: url(./room_pics/r1.png);
+.__contact-btn span {
+	align-items: center;
 }
 
-.room_item:nth-child(2){
-  background-image: url(./room_pics/r2.png);
-  background-position: center;
+.__container {
+	height: 400px;
+	background-image: url('https://bit.ly/2Qo3Gf0');
+	background-size: cover;
 }
 
-.room_item:nth-child(3){
-  background-image: url(./room_pics/r3.png);
-  background-position: center;
+.__text-overlay {
+	color: #ffffff;
+	font-size: 50px;
+	flex-direction: column;
 }
 
-.room_item:nth-child(4){
-  background-image: url(./room_pics/r4.png);
-  background-position: center;
+.__text-overlay span:nth-child(1) {
+	line-height: 3rem;
 }
 
-.room_item:nth-child(5){
-  background-image: url(./room_pics/r5.png);
-  background-position: center;
+.__text-overlay span:nth-child(2) {
+	font-family: 'Varela';
+	font-size: 25px;
+	line-height: 2rem;
 }
 
-.room_item .text::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,.5);
-  opacity: .8;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.__text-overlay span:nth-child(3) {
+	font-size: 12px;
+	max-width: 350px;
+	/* height: 30px; */
 }
 
-/*  */
-
-#dinningHeader {
-  background: url(./imgs/dinningheader1.png) center center;
-  background-size: contain;
-  min-height: 320px;
-  color: white;
-
+.__navbar-sub {
+	height: 70px;
+	background-color: #ffffff;
+	box-shadow: 0 0 7px 0 var(--navabar-box-shadow);
+	width: 80%;
+	z-index: 1000;
+	position: absolute;
+	top: 370px;
+	left: 10%;
+	right: 10%;
 }
 
-/* Styling of Dinning Section Here */
-
-.dinningAreas {
-  margin-top: 70px;
+.__navbar-sub span a:hover {
+	color: #711d2b;
 }
 
-#icons {
-  text-align: center;
-  font-size: 42px;
-  position: sticky;
-  bottom: 0px;
+.__section-room-container {
+	min-height: 340px;
 }
 
-#icons:hover {
-animation: spinAround 2s linear infinite;
+.__room-vector-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.__section-room-text {
+	flex-direction: column;
+	font-size: 15px;
+}
+
+.__section-room-text span:nth-child(1) {
+	font-family: 'Varela';
+	font-size: 35px;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.__section-room-text-types {
+	flex-wrap: wrap;
+}
+
+.__room-card {
+	flex-direction: column;
+	width: 250px;
+	height: 300px;
+}
+
+.__card-img {
+	object-fit: cover;
+	object-position: center;
+	/* border-bottom-right-radius: 20px; */
+	width: inherit;
+	height: inherit;
+	/* z-index: 1500; */
+}
+
+.__text-container {
+	flex-direction: column;
+	color: #ffffff;
+	position: relative;
+	width: 350px;
+	height: 180px;
+	top: -30px;
+	box-shadow: 0 0 4px 0 #8e8c8c;
+	border-bottom-right-radius: 20px;
+	z-index: 1000;
+}
+
+.__empty-card {
+	height: 70px;
+}
+
+.__room-card,
+.__room-description {
+	position: absolute;
+}
+
+.__room-description {
+	flex-direction: column;
+}
+
+.__room-description span:nth-child(1) {
+	font-size: 28px;
+	font-family: 'Varela';
+}
+
+.__section-room-types-container {
+	flex-direction: column;
+	min-height: 400px;
+}
+
+.__section-room-type {
+	height: 400px;
+}
+
+.__room-description-container,
+.__section-dinning-overlay-container {
+	position: absolute;
+	height: 400px;
+}
+
+.__description-text {
+	width: 300px;
+	height: 250px;
+	background-color: #b4b2b2d7;
+	opacity: 0.9;
+}
+
+.__text-container span:nth-child(1) {
+	font-family: 'Varela';
+	font-size: 25px;
+}
+
+.__text-container span:nth-child(2) {
+	font-family: 'Varela';
+	font-size: 14px;
+}
+
+.__section-dinning-container,
+.__section-restaurant-container {
+	height: 300px;
+}
+
+.__section-dinning-image,
+.__section-restaurant-image,
+.__section-conference-images,
+.__section-club-image {
+	height: inherit;
+	object-position: center;
+	object-fit: cover;
+}
+
+.__section-dinning-text {
+	flex-direction: column;
+	color: #ffffff;
+	font-size: 5rem;
+}
+
+.__restaurant-header {
+	font-size: 35px;
+	color: grey;
+}
+
+.__section-conferences {
+	min-height: 400px;
+	flex-direction: column;
+}
+
+.__section-conference-header {
+	font-size: 25px;
+	z-index: 1000;
+	/* position: absolute; */
+}
+
+.__section-conference-images-container {
+	min-height: 400px;
+}
+
+.__section-club-container {
+	flex-direction: column;
+	height: 400px;
+}
+
+.__section-club-image {
+	min-height: 320px;
+}
+
+.__section-club-header {
+	font-size: 35px;
+}
+
+sup {
+	top: .1rem!important;
+}
+
+.__bold-text {
+	font-weight: 600;
+}
+
+.__grey-text {
+	color: #484848;
+}
+
+.__section-contact-form-container {
+	flex-direction: column;
+	max-width: 650px;
+}
+
+.__section-contact-form {
+	flex-direction: column;
+}
+
+.__section-contact-form-header {
+	font-size: 35px;
+}
+
+.__section-contact-form-button {
+	color: #ffffff!important;
+}
+
+.__section--amenities__container {
+	min-height: 400px;
+	max-height: fit-content;
+}
+
+.card-image {
+	height: 80%;
+}
+
+.card-image img {
+	object-fit: cover;
+	object-position: center;
+}
+
+footer {
+	font-family: 'Raleway';
+}
+
+.footer-copyright {
+	font-family: 'Costa Ptf Demi';
+}
+
+@media (max-width: 320px) {
+	.__navbar-sub > span {
+		margin-left: .5rem!important;
+	}
+
+	.__navbar-sub span:nth-last-child(1) > a {
+		margin-right: .5rem!important;
+	}
+
+	.__description-text {
+		margin-right: auto;
+    width: 250px;
+		height: 200px;
+	}
+
+	.__section-contact-form-container {
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+
+	#email, #email + label {
+		margin-left: 0!important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.__contact-btn {
+		margin-right: 1rem;
+	}
+
+	.__contact-btn span {
+		font-size: 12px;
+	}
+
+	.__brand-logo {
+		height: 30px;
+		width: 140px;
+	}
+
+	.__text-overlay {
+		font-size: 30px;
+	}
+
+	.__text-overlay span:nth-child(1) {
+		line-height: 2rem;
+	}
+
+	.__text-overlay span:nth-child(2) {
+		font-size: 17px;
+		line-height: 1rem;
+	}
+
+	.__text-overlay span:nth-child(3) {
+		font-size: 12px;
+		max-width: 380px;
+		margin-left: 1rem!important;
+		margin-right: 1rem!important;
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+
+	.__navbar-sub {
+		font-size: 11px;
+		overflow-x: auto;
+	}
+
+	.__section-room-container {
+		flex-wrap: wrap;
+	}
+
+	.__room-vector-image {
+		margin: 3.5rem auto 2rem auto !important;
+	}
+
+	.__section-room-text p {
+		font-size: 11px;
+		margin: .6rem 2rem auto !important;
+	}
+
+	.__section-room-types-container {
+		min-height: 300px;
+	}
+
+	.__section-room-type {
+		flex-wrap: wrap;
+		width: inherit;
+		height: 300px;
+	}
+
+	.__room-description-container {
+		height: 300px;
+	}
+
+	.__section-dinning-text {
+		flex-direction: column;
+		color: #ffffff;
+		font-size: 3rem;
+	}
+
+	.__restaurant-header {
+		font-size: 20px;
+		color: grey;
+	}
+
+	.__section-conference-header {
+		font-size: 18px;
+	}
+
+	.__section-conference-images-container {
+		width: auto!important;
+	}
+
+	.__section-club-header {
+		font-size: 22px;
+	}
+
+	.__section-contact-form-container {
+		max-width: 350px;
+	}
+
+	.__section-contact-form-header {
+		font-size: 22px;
+	}
+
+	.__section--amenities__container .card {
+		min-height: fit-content;
+	}
+
+	.footer-copyright {
+		font-size: 13px;
+	}
+}
+
+@media (min-width: 992px) {
+	.__room-vector-image,
+	.___section-room-types-container {
+		margin-left: 18% !important;
+	}
+
+	.__section-room-text,
+	.___section-room-types-container {
+		margin-right: 18%;
+	}
+
+	.__room-card {
+		margin-left: 0!important;
+	}
+
+	.__section-room-text p {
+		font-size: 15px;
+		margin: .6rem 10rem auto!important;
+	}
+
+	.__section-contact-form-container {
+		max-width: 650px;
+	}
+}
+
+/* device specific fix */
+
+@media (max-width: 768px) and (max-height: 1024px) {
+	.__text-overlay span:nth-child(3) {
+		margin-left: auto!important;
+		margin-right: auto!important;
+	}
+}
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+	.__section-room-text p {
+		margin-left: 2rem!important;
+		margin-right: auto!important;
+	}
+}
+
+/* iphone 6-8 */
+@media (max-width: 375px) {
+	.__section-room-text p {
+		margin-left: 2rem!important;
+		margin-right: 2rem!important;
+	}
 }
