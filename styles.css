@@ -255,13 +255,13 @@ a:hover {
 }
 
 sup {
-	top: .2rem;
+	top: .1rem!important;
 }
 
 .__bold-text {
 	font-weight: 600;
 }
-
+Deluxe
 .__grey-text {
 	color: #484848;
 }
