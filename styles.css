@@ -1,10 +1,12 @@
-/* @import "@material/textfield/mdc-text-field"; */
-/* @import "./node_modules/@material/textfield/dist/"; */
-
 :root {
 	--navbar-background-color: #ffffff;
 	--navbar-height: 60px;
 	--navabar-box-shadow: #978585d8;
+}
+
+@font-face {
+	src: url('./assets/fonts/costa-ptf-demi/costa-ptf-demi.otf');
+	font-family: 'Costa Ptf Demi'
 }
 
 * {
@@ -14,7 +16,7 @@
 }
 
 body {
-	font-family: 'Raleway', sans-serif !important;
+	font-family: 'Costa Ptf Demi', 'Raleway', sans-serif !important;
 }
 
 a {
@@ -261,7 +263,7 @@ sup {
 .__bold-text {
 	font-weight: 600;
 }
-Deluxe
+
 .__grey-text {
 	color: #484848;
 }
@@ -281,6 +283,14 @@ Deluxe
 
 .__section-contact-form-button {
 	color: #ffffff!important;
+}
+
+footer {
+	font-family: 'Raleway';
+}
+
+.footer-copyright {
+	font-family: 'Costa Ptf Demi';
 }
 
 @media screen and (max-width: 768px) {
