@@ -435,6 +435,10 @@ footer {
 		min-height: fit-content;
 	}
 
+	#email, #email + label {
+		margin-left: 0!important;
+	}
+
 	.footer-copyright {
 		font-size: 13px;
 	}
