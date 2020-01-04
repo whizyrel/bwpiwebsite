@@ -237,20 +237,17 @@ a:hover {
 .__section-conference-header {
 	font-size: 25px;
 	z-index: 1000;
-	/* position: absolute; */
 }
 
 .__section-conference-images-container {
 	min-height: 400px;
 }
 
-.__section-club-container,
 .__section-banquetting-container {
 	flex-direction: column;
 	height: 400px;
 }
 
-.__section-club-image,
 .__section-banquetting-image {
 	min-height: 320px;
 }
@@ -258,6 +255,11 @@ a:hover {
 .__section-club-header,
 .__section-banquetting-header {
 	font-size: 35px;
+}
+
+/* tentative position */
+.__section-club-container {
+	min-height: 300px;
 }
 
 sup {
