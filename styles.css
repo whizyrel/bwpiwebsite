@@ -283,7 +283,8 @@ sup {
 	max-width: 650px;
 }
 
-.__section-contact-form {
+.__section-contact-form,
+.__section__restaturant--text__description {
 	flex-direction: column;
 }
 
