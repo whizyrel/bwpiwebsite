@@ -211,7 +211,8 @@ a:hover {
 .__section-dinning-image,
 .__section-restaurant-image,
 .__section-conference-images,
-.__section-club-image {
+.__section-club-image,
+.__section-banquetting-image {
 	height: inherit;
 	object-position: center;
 	object-fit: cover;
@@ -243,16 +244,19 @@ a:hover {
 	min-height: 400px;
 }
 
-.__section-club-container {
+.__section-club-container,
+.__section-banquetting-container {
 	flex-direction: column;
 	height: 400px;
 }
 
-.__section-club-image {
+.__section-club-image,
+.__section-banquetting-image {
 	min-height: 320px;
 }
 
-.__section-club-header {
+.__section-club-header,
+.__section-banquetting-header {
 	font-size: 35px;
 }
 
