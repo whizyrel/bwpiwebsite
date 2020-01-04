@@ -266,6 +266,10 @@ a:hover {
 	flex-direction: column;
 }
 
+.__social__media__link--container a {
+	color: #ffffff;
+}
+
 sup {
 	top: .1rem!important;
 }
@@ -515,4 +519,23 @@ footer {
 		margin-left: 2rem!important;
 		margin-right: 2rem!important;
 	}
+}
+
+
+/* scroll bar */
+body::-webkit-scrollbar {
+    width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+	/* -webkit-box-shadow: inset 0 0 6px #0000004d; */
+	/* box-shadow: inset 0 0 6px #0000004d; */
+	background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #711d2b;
+	/* outline: 1px solid #ffffff; */
+	border-radius: 40px;
+	min-height: 150px;
 }
