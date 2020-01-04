@@ -262,6 +262,13 @@ a:hover {
 	min-height: 300px;
 }
 
+.__section-club-container div.row > :nth-child(1) {
+	flex-direction: column;
+	background-color: #720303;
+	opacity: 1;
+	color: #ffffff;
+}
+
 sup {
 	top: .1rem!important;
 }
