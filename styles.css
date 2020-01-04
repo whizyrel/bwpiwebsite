@@ -284,11 +284,13 @@ sup {
 }
 
 .__section-contact-form,
-.__section__restaturant--text__description {
+.__section__restaturant--text__description,
+.__section--amenities__container {
 	flex-direction: column;
 }
 
-.__section-contact-form-header {
+.__section-contact-form-header,
+.__section--amenities__container > span {
 	font-size: 35px;
 }
 
@@ -432,7 +434,8 @@ footer {
 		color: grey;
 	}
 
-	.__section-conference-header {
+	.__section-conference-header,
+	.__section--amenities__container > span {
 		font-size: 18px;
 	}
 
