@@ -196,7 +196,7 @@ a:hover {
 }
 
 .__room-description-container,
-.__section-dinning-overlay-container {
+.__section-dinning-overlay-container  {
 	position: absolute;
 	height: 400px;
 }
@@ -224,6 +224,7 @@ a:hover {
 }
 
 .__section-dinning-image,
+.__section-dinning-overlay-container,
 .__section-restaurant-image,
 .__section-conference-images,
 .__section-club-image,
