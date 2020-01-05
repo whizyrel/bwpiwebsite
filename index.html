@@ -14,14 +14,12 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
   <!-- font awesome cdn -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://kit.fontawesome.com/1ea812cd7b.js" crossorigin="anonymous"></script>
 
   <!-- raleway and varela font from google -->
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
-
-  <!-- main style -->
-  <link rel="stylesheet" href="./styles.css">
 
   <!-- aos animation -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -30,6 +28,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- main style -->
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -38,7 +39,12 @@
       <img class="my-auto ml-4 __brand-logo" src="https://bit.ly/396cleV" alt="BWPI Logo">
     </a>
 
-     <a href="#contact-us" class="__contact-btn d-flex h-100 ml-auto px-3 py-2">
+    <span class="d-flex ml-auto mr-2 __section--find__on__map">
+      <i class="fas fa-map-marker-alt my-auto"></i>
+      <!-- map-marker-alt -->
+    </span>
+
+     <a href="#contact-us" class="__contact-btn d-flex h-100 mr-3 px-2 py-2">
        <span class="my-auto __bold-text h-100 d-flex">contact us</span>
      </a>
   </nav>
@@ -191,7 +197,7 @@
 
     <div class="d-flex row w-100 mx-auto __section-conference-images-container">
       <div class="col-md-6 my-3 px-2">
-        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate1.jpg" alt="conference image" data-aos="fade-up">
+        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate1.jpg" alt="conference image" data-aos="fade-down">
       </div>
       <div class="col-md-6 my-3 px-2">
         <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate2.jpg" alt="conference image" data-aos="fade-down">
@@ -217,8 +223,11 @@
     <div class="col-sm-8 d-flex">
       <img src="./imgs/restaurant.JPG" alt="image" class="w-100 h-100 my-auto __section-restaurant-image">
     </div>
-    <div class="col-sm-4 w-100 d-flex" data-aos="fade-right">
-      <span class="__bold-text my-auto __restaurant-header">Lara's Restaurant</span>
+    <div class="col-sm-4 w-100 d-flex __section__restaturant--text__description" data-aos="fade-right">
+      <span class="__bold-text mt-auto  mb-2 __restaurant-header">Lara's Restaurant</span>
+      <span class="mb-auto mx-auto">
+        The Laras Restaurant serves a wide range of African and continental cuisine, carefully prepared by our Executive Chef and team.
+      </span>
     </div>
   </div>
 
@@ -267,6 +276,7 @@
 
   <!-- pool gym parking space -->
   <div class="w-100 d-flex __section--amenities__container my-4" id="services" data-aos="fade-zoom-in">
+    <span class="__bold-text mx-auto my-3" data-aos="fade-zoom-out" data-aos-delay="5">Services/Amenities</span>
     <div class="row w-100 px-3 m-0">
       <div class="col-md-4 p-0 mt-3" data-aos="fade-down">
         <div class="row h-100">
@@ -324,14 +334,16 @@
     </div>
   </div>
 
+  <div class="d-flex w-100 __section--map-container" data-aos="fade-down" data-aos-delay="5"></div>
+
   <!-- contact form -->
   <div class="d-flex mx-auto __section-contact-form-container mt-4" id="contact-us" data-aos="fade-down" data-aos-delay="5">
-    <span class="mx-auto __bold-text mb-2 __section-contact-form-header">Leave a message</span>
+    <span class="mx-auto __bold-text mb-2 __section-contact-form-header">leave US a message</span>
     <form class="w-100 d-flex __section-contact-form">
       <div class="row mx-0">
         <div class="input-field col-sm-6 px-0">
-          <input id="icon_prefix" type="text" class="validate" required>
-          <label for="icon_prefix">Name</label>
+          <input id="name" type="text" class="validate" required>
+          <label for="name">Name</label>
         </div>
         <div class="input-field col-sm-6 px-0">
           <input id="email" type="email" class="validate ml-2">
@@ -341,15 +353,15 @@
 
       <div class="row mx-0">
         <div class="input-field col-sm-12 px-0">
-          <input id="icon_prefix" type="text" class="validate" required>
-          <label for="icon_prefix">Subject</label>
+          <input id="subject" type="text" class="validate" required>
+          <label for="subject">Subject</label>
         </div>
       </div>
 
       <div class="row mx-0">
         <div class="input-field col-sm-12 px-0">
-          <textarea id="textarea1" class="materialize-textarea" required></textarea>
-          <label for="textarea1">Message</label>
+          <textarea id="message" class="materialize-textarea" required></textarea>
+          <label for="message">Message</label>
         </div>
       </div>
 
@@ -398,6 +410,17 @@
             <li><a class="grey-text text-lighten-3" href="#conferencing">Conferencing</a></li>
             <li><a class="grey-text text-lighten-3" href="#banquetting">Banquetting</a></li>
           </ul>
+
+          <div class="__social__media__link--container d-flex w-100">
+            <span class="white-text my-auto mr-2">connect with US on</span>
+            
+            <a href="https://www.facebook.com/BWPIBADAN/" target="_blank" class="my-auto d-flex">
+              <i class="fa fa-facebook-square fa-2x mr-2 my-auto"></i>
+            </a>
+            <a href="https://www.instagram.com/bestwesternplusibadan/" target="_blank" class="my-auto d-flex">
+              <i class="fa fa-instagram fa-2x mr-auto ml-2 my-auto"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -409,6 +432,41 @@
       </div>
     </div>
   </footer>
+
+  <!-- scripts -->
+  <script>
+    const mapContainer = `.__section--map-container`;
+
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var bwpi = {lat: 7.375313, lng: 3.863821};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.querySelector(mapContainer), {zoom: 16, center: bwpi});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({
+        position: bwpi,
+        map,
+        gestureHandling: 'cooperative',
+        disableDefaultUI: true,
+        zoomControl: true,
+        streetViewControl: true,
+        rotateControl: true,
+        fullscreenControl: true,
+      });
+    }
+  </script>
+
+  <!-- google maps -->
+  <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5zEuc7IeB8-cNILYJrN9LHqY_YVr223A&callback=initMap">
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -425,5 +483,8 @@
       duration: 1200,
     })
   </script>
+
+  <!-- logic -->
+  <script src="./script.js"></script>
 </body>
 </html>
