@@ -41,11 +41,10 @@
       const lng = 3.863821;
       const origin = {_lat: pos.coords.latitude, _lng: pos.coords.longitude};
       const travelMode = 'driving';
-      console.log({origin, acc: pos.coords.accuracy});
 
-      const apiUrl = `https://www.google.com/maps/dir/?api=1&origin=${origin._lat},${origin._lng}&destination=${lat},${lng}&travelmode=${travelMode}&dir_action=navigation`;
+      const apiUrl = `https://www.google.com/maps/dir/?api=1&origin=${origin._lat},${origin._lng}&destination=${lat},${lng}&travelmode=${travelMode}`;
       // eslint-disable-next-line max-len
-      // `origin=${origin._lat},${origin._lng}??dir_action=navigation&?waypoint=Cahllenge%20Mokola%20Apata
+      // `origin=${origin._lat},${origin._lng}??dir_action=navigation&?waypoint=Challenge%20Mokola%20Apata
 
       btnElement.addEventListener('click', (e) => {
         // any possible apple appearance
