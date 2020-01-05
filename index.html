@@ -14,7 +14,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
   <!-- font awesome cdn -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://kit.fontawesome.com/1ea812cd7b.js" crossorigin="anonymous"></script>
 
   <!-- raleway and varela font from google -->
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -38,7 +39,12 @@
       <img class="my-auto ml-4 __brand-logo" src="https://bit.ly/396cleV" alt="BWPI Logo">
     </a>
 
-     <a href="#contact-us" class="__contact-btn d-flex h-100 ml-auto px-3 py-2">
+    <span class="d-flex ml-auto mr-2 __section--find__on__map">
+      <i class="fas fa-map-marker-alt my-auto"></i>
+      <!-- map-marker-alt -->
+    </span>
+
+     <a href="#contact-us" class="__contact-btn d-flex h-100 mr-3 px-2 py-2">
        <span class="my-auto __bold-text h-100 d-flex">contact us</span>
      </a>
   </nav>
@@ -434,10 +440,10 @@
     // Initialize and add the map
     function initMap() {
       // The location of Uluru
-      var bwpi = {lat: 7.375315, lng: 3.863821};
+      var bwpi = {lat: 7.375313, lng: 3.863821};
       // The map, centered at Uluru
       var map = new google.maps.Map(
-          document.querySelector(mapContainer), {zoom: 19, center: bwpi});
+          document.querySelector(mapContainer), {zoom: 16, center: bwpi});
       // The marker, positioned at Uluru
       var marker = new google.maps.Marker({
         position: bwpi,
@@ -477,5 +483,8 @@
       duration: 1200,
     })
   </script>
+
+  <!-- logic -->
+  <script src="./script.js"></script>
 </body>
 </html>

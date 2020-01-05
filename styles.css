@@ -41,6 +41,21 @@ a:hover {
 	width: 200px;
 }
 
+.__section--find__on__map {
+	height: inherit;
+	color: #000;
+}
+
+.__section--find__on__map i {
+	color: #711d2b;
+	height: fit-content;
+}
+
+.__section--find__on__map,
+.__contact-bt {
+	cursor: pointer;
+}
+
 .__contact-btn {
 	color: #000000;
 	margin-right: 2rem;
