@@ -438,14 +438,15 @@
     const mapContainer = `.__section--map-container`;
 
     // Initialize and add the map
-    function initMap() {
+    var initMap = () => {
       // The location of Uluru
-      var bwpi = {lat: 7.375313, lng: 3.863821};
+      const bwpi = {lat: 7.375319, lng: 3.863821};
+
       // The map, centered at Uluru
-      var map = new google.maps.Map(
-          document.querySelector(mapContainer), {zoom: 16, center: bwpi});
+      const map = new google.maps.Map(
+          document.querySelector(mapContainer), {zoom: 18, center: bwpi});
       // The marker, positioned at Uluru
-      var marker = new google.maps.Marker({
+      const marker = new google.maps.Marker({
         position: bwpi,
         map,
         gestureHandling: 'cooperative',
