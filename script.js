@@ -48,12 +48,14 @@
       // `origin=${origin._lat},${origin._lng}??dir_action=navigation&?waypoint=Cahllenge%20Mokola%20Apata
 
       btnElement.addEventListener('click', (e) => {
-        console.log({e});
-
+        // any possible apple appearance
         if (
-          (navigator.platform.indexOf('iPhone') != -1) ||
-          (navigator.platform.indexOf('iPad') != -1) ||
-          (navigator.platform.indexOf('iPod') != -1)
+          (navigator.platform.includes('IPhone')) ||
+          (navigator.platform.includes('IPad')) ||
+          (navigator.platform.includes('IPod')) ||
+          (navigator.platform.includes('Mac')) ||
+          (navigator.platform.includes('Apple')) ||
+          (navigator.platform.includes('Darwin'))
         ) {
           window.open(apiUrl.replace('https', 'maps'));
           /* `maps://maps.google.com/maps?daddr=${lat},${lng}&amp;ll=` */
