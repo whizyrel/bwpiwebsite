@@ -191,7 +191,7 @@
 
     <div class="d-flex row w-100 mx-auto __section-conference-images-container">
       <div class="col-md-6 my-3 px-2">
-        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate1.jpg" alt="conference image" data-aos="fade-up">
+        <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate1.jpg" alt="conference image" data-aos="fade-down">
       </div>
       <div class="col-md-6 my-3 px-2">
         <img class="__section-conference-images w-100 h-100" src="./imgs/checkmate2.jpg" alt="conference image" data-aos="fade-down">
@@ -328,14 +328,16 @@
     </div>
   </div>
 
+  <div class="d-flex w-100 __section--map-container" data-aos="fade-down" data-aos-delay="5"></div>
+
   <!-- contact form -->
   <div class="d-flex mx-auto __section-contact-form-container mt-4" id="contact-us" data-aos="fade-down" data-aos-delay="5">
     <span class="mx-auto __bold-text mb-2 __section-contact-form-header">leave US a message</span>
     <form class="w-100 d-flex __section-contact-form">
       <div class="row mx-0">
         <div class="input-field col-sm-6 px-0">
-          <input id="icon_prefix" type="text" class="validate" required>
-          <label for="icon_prefix">Name</label>
+          <input id="name" type="text" class="validate" required>
+          <label for="name">Name</label>
         </div>
         <div class="input-field col-sm-6 px-0">
           <input id="email" type="email" class="validate ml-2">
@@ -345,15 +347,15 @@
 
       <div class="row mx-0">
         <div class="input-field col-sm-12 px-0">
-          <input id="icon_prefix" type="text" class="validate" required>
-          <label for="icon_prefix">Subject</label>
+          <input id="subject" type="text" class="validate" required>
+          <label for="subject">Subject</label>
         </div>
       </div>
 
       <div class="row mx-0">
         <div class="input-field col-sm-12 px-0">
-          <textarea id="textarea1" class="materialize-textarea" required></textarea>
-          <label for="textarea1">Message</label>
+          <textarea id="message" class="materialize-textarea" required></textarea>
+          <label for="message">Message</label>
         </div>
       </div>
 
@@ -424,6 +426,41 @@
       </div>
     </div>
   </footer>
+
+  <!-- scripts -->
+  <script>
+    const mapContainer = `.__section--map-container`;
+
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var bwpi = {lat: 7.375315, lng: 3.863821};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.querySelector(mapContainer), {zoom: 19, center: bwpi});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({
+        position: bwpi,
+        map,
+        gestureHandling: 'cooperative',
+        disableDefaultUI: true,
+        zoomControl: true,
+        streetViewControl: true,
+        rotateControl: true,
+        fullscreenControl: true,
+      });
+    }
+  </script>
+
+  <!-- google maps -->
+  <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5zEuc7IeB8-cNILYJrN9LHqY_YVr223A&callback=initMap">
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

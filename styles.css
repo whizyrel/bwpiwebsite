@@ -326,6 +326,10 @@ sup {
 	line-height: normal!important;
 }
 
+.__section--map-container {
+	height: calc(100vh - var(--navbar-height));
+}
+
 footer {
 	font-family: 'Raleway';
 }
@@ -357,6 +361,10 @@ footer {
 	#email, #email + label {
 		margin-left: 0!important;
 	}
+
+	/* .__section--map-container {
+		height: 400px;
+	} */
 }
 
 @media screen and (max-width: 768px) {
@@ -462,6 +470,10 @@ footer {
 	.__section--amenities__container .card {
 		min-height: fit-content;
 	}
+
+	/* .__section--map-container {
+		height: 500px;
+	} */
 
 	#email, #email + label {
 		margin-left: 0!important;
